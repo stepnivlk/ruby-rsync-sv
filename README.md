@@ -4,7 +4,7 @@ Now its possible to get hash of module - description pairs on given Rsync server
 
 e.g.:
 ```ruby
-test = Rsync.run("rsync://zabbix.ernet", "")
+test = Rsync.run("rsync://domain.domain", "")
 => #<Rsync::Result:0x000000017c1838 @exitcode=0, @raw="zabbix         \tzabbix config directory\netc            \tmain config directory\n">
 test.list_modules
 => {"zabbix"=>"zabbix config directory", "etc"=>"main config directory"}
